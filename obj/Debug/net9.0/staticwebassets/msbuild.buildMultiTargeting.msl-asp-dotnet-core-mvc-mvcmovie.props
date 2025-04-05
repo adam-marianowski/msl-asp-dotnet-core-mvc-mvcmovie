@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\msl-asp-dotnet-core-mvc-mvcmovie.props" />
+</Project>

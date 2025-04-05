@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\msl-asp-dotnet-core-mvc-mvcmovie.props" />
-</Project>

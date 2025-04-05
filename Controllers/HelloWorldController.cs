@@ -1,3 +1,4 @@
+using System.Text.Encodings.Web;
 using Microsoft.AspNetCore.Mvc;
 
 namespace msl_asp_dotnet_core_mvc_mvcmovie.Controllers
@@ -9,9 +10,9 @@ namespace msl_asp_dotnet_core_mvc_mvcmovie.Controllers
             return "Hello World";
         }
 
-        public string Welcome() 
+        public string Welcome(string name, int ID = 1)
         {
-            return "This is welcome action method";
+            return HtmlEncoder.Default.Encode($"Hello {name}, ID: {ID}");
         }
 
     }

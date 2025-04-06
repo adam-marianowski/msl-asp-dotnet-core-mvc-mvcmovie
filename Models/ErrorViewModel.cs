@@ -1,4 +1,4 @@
-namespace msl_asp_dotnet_core_mvc_mvcmovie.Models;
+namespace MvcMovie.Models;
 
 public class ErrorViewModel
 {

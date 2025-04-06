@@ -7,7 +7,7 @@ using MvcMovie.Data;
 
 #nullable disable
 
-namespace msl_asp_dotnet_core_mvc_mvcmovie.Migrations
+namespace MvcMovie.Migrations
 {
     [DbContext(typeof(MvcMovieContext))]
     partial class MvcMovieContextModelSnapshot : ModelSnapshot
@@ -27,6 +27,9 @@ namespace msl_asp_dotnet_core_mvc_mvcmovie.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18, 2)");
+
+                    b.Property<string>("Rating")
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime>("ReleaseDate")

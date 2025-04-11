@@ -172,6 +172,8 @@ namespace MvcMovie.Controllers
         }
 
         // POST: Movies/Delete/5
+        // Action name maps method 
+        // Reference: https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/details?view=aspnetcore-9.0
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
